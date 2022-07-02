@@ -1,0 +1,215 @@
+<<!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de Formulário</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Exemplo de uso de um formulário</h1>
+        </header>
+        <section id="sumário"> style="display: flex; flex-direction: row;">
+            <h2>Índice de TAGs html</h2>
+
+            <fieldset id="inputs">
+                <legend> Tipos de input</legend>
+                <ul>
+                </ul>
+                <li><a href="#btnOla">button</a></li>
+                <li><a href="#">checkbox</a></li>
+                <li><a href="#">
+                        <div id="cor"></div>
+                    </a></li>
+                <li><a href="#dtnasc">date</a></li>
+                <li><a href="#">datetime-local</a></li>
+                <li><a href="#">email</a></li>
+                <li><a href="#">fotopessoal</a></li>
+                <li><a href="#">hidden</a></li>
+                <li><a href="#">image</a></li>
+                <li><a href="#">month</a></li>
+                <li><a href="#idade">number</a></li>
+                <li><a href="#senha">password</a></li>
+                <li><a href="#">radio</a></li>
+                <li><a href="#">range</a></li>
+                <li><a href="#">reset</a></li>
+                <li><a href="#">search</a></li>
+                <li><a href="#btnEnviar">submit</a></li>
+                <li><a href="#">tel</a></li>
+                <li><a href="#nome">text</a></li>
+                <li><a href="#">time</a></li>
+                <li><a href="#">url</a></li>
+                <li><a href="#">week</a></li>
+                </ul>
+            </fieldset>
+<legend>
+    <ul>
+        <li><a href="#">selec de uma linha</a></li>
+        <li><a href="#">selec de lista</a></li>
+    </ul>
+</legend>
+        </section>
+
+        <section id="Cadastro">
+            <h2>Início do formulário</h2>
+        </section>
+        <form action="#">
+            <! uso do campo hidden-->
+            <div>
+                <label for="id">Aqui tem um campo hidden..</label>
+                <imput type="hidden"
+            </div>
+            <!--Button-->
+            <div>
+                <label for="btnOla">Exemplo de button</label>
+                <input type="button" value="Clique-me" id="btnOla" onclick="alert('Olá mundo');">
+            </div>
+            <!--Uso do Checkbox-->
+            <div>
+                <fieldset>
+                    <legend>Estilo de vida</legend>
+                    <div>
+                        <input type="checkbox" name="usotabaxo" id="usotabaco">
+                        <label for="usotabaco">Você fuma?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="praticaesporte" id="praticaesporte">
+                        <label for="praticaesporte">Pratica esporte?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="usoalcool" id="usoalcool">
+                        <label for="usoalcool">Você ingere álcool durante a semana?</label>
+                    </div>
+                    <!--seletor de cor-->
+                    <div>
+                        <label for="cor"> escolha cor</label>
+                    </div>
+                </fieldset>
+            </div>
+            <!--Nome da pessoa-->
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" maxlength="30" minlength="5" required>
+                <!--Campo requerido com no minimo 5 caracteres e no maximo 30-->
+                <!--Required obriga a informação de dados para nao enviar em branco-->
+                <!--Shift + alt + F alinha a identação da seção-->
+            </div>
+            <!--Endereço da pessoa-->
+            <div>
+                <label for="endereço">Endereço:</label>
+                <input type="text" name="endereço" id="endereço" required>
+            </div>
+            <!--Data de nascimento-->
+            <div>
+                <label for="dtnasc">Data de Nascimento:</label>
+                <input type="date" name="dtnasc" id="dtnasc" required>
+            </div>
+            <!--Senha do cartão de crédito-->
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" maxlength="10" minlength="6" required>
+            </div>
+            <!--Uso do radio-->
+            <div>
+                <imput type="radio" name="estadocivil" id="idcasado" value=" casado">
+                    <label for="idcasado">casado</label>
+                    <div>
+                        imput type="radio" name="estadocivil" id="idsolteiro" value="solteiro">
+                        <label for="idsolteiro">solteiro</label>
+                    </div>
+                    
+                        <imput type="radio" name="estadocivil" id="idseparado" value="separado">
+                        <label for="idseparado">separado</label>
+                    </div>
+                    <div>
+                        <imput type="radio" name="estadocivil" id="idviuvo" value="viuvo">
+                            <label for="idviuvo">viuvo</label>
+                            <div>
+            </div>
+            <!--Idade-->
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" maxlength="3" minlength="2" required>
+                min="0" max=
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+            </div>
+            <!--Uso do range-->
+            <div>
+                i<label for="grausatisfacao"> Indique o grau de satisfação
+                <input type="number" name="idade" id="idade" maxlength="3" minlength="2" required>
+            </div>
+
+            <!Uso do month-->
+            <div>
+                <label for="mespagamento">Indique o mês para pagamento da sua assinatura</label>
+                <imput type="number" name
+            </div>
+            <!--Uso do URL-->
+            <label for="mespagamento">Indique o mês para pagamento da sua assinatura</label>
+                <imput type="number" name
+
+            <div>
+                <label for="pagina">indique o total de pagina pessoal
+                <imput type="email" name="email" </div>
+
+                    <!--Telefone-->
+                    label for="email">email de contato</label>
+                <imput type="email" name="email" id="telefone"
+                pattern="[0-9] {2} [0-9] {4,5}-[0-9]{4}" required> <!--(00) 00000-0000-->
+                    <!--uso do search-->
+                    <div>
+                        <label for="telefone">telefone de  contato</label>
+                <imput type="tel" name="telefone" </div>
+                    </div>
+                    <!--Uso do week-->
+                    <div>
+                        label for="semana"> id semana do ano
+                <imput type="semana" name="semana" 
+                    </div>
+
+                    <!--Uso do data list para um text-->
+                    <div>
+                        <label for="navegador">escolha o seu navegador de preferancia</label>
+                        <imput type="text" name="navegador" id="navegador"
+                        list="IstNavegador">
+                        <datalist id="IstNvegador">
+                            <option value="Edge"></option>
+                            <option value="Chrome"></option>
+                            <option value="opera"></option>
+                            <option value="Safari"></option>
+                            <option value="Firefox"></option>
+                            
+                            <div>
+
+                    
+
+
+                    <!--Uso do file-->
+                    <div>
+                        <label for="file"></label>
+                    </div>
+                    <! Uso do imput image-->
+                    <label for="image">Uso do imput image</label>
+                    <imput type="image" name="image" id="image" src=""
+                    <! --Uso do file com multiplos arquivos-->
+                        <label for="fotosprodutos"> Indicar as fotos dos produtos:</label>
+                        <imput type="file" name="fotosprodutos" id="" <input type="submit" value="Enviar"
+                            id="btnEnviar">
+
+        </form>
+    </body>
+
+    </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo de uso de um formulário</h1>
+    </header>
+    <section id="sumário">
+        <h2>Índice de TAGs html</h2>
+
+        <fieldset id="inputs">
+            <legend> Tipos de input</legend>
+            <ul>
+            </ul>
+            <li><a href="#btnOla">button</a></li>
+            <li><a href="#">checkbox</a></li>
+            <li><a href="#">color</a></li>
+            <li><a href="#dtnasc">date</a></li>
+            <li><a href="#">datetime-local</a></li>
+            <li><a href="#">email</a></li>
+            <li><a href="#">file</a></li>
+            <li><a href="#">hidden</a></li>
+            <li><a href="#">image</a></li>
+            <li><a href="#">month</a></li>
+            <li><a href="#idade">number</a></li>
+            <li><a href="#senha">password</a></li>
+            <li><a href="#">radio</a></li>
+            <li><a href="#">range</a></li>
+            <li><a href="#">reset</a></li>
+            <li><a href="#">search</a></li>
+            <li><a href="#btnEnviar">submit</a></li>
+            <li><a href="#">tel</a></li>
+            <li><a href="#nome">text</a></li>
+            <li><a href="#">time</a></li>
+            <li><a href="#">url</a></li>
+            <li><a href="#">week</a></li>
+            </ul>
+        </fieldset>
+
+    </section>
+
+    <section id="Cadastro">
+        <h2>Início do formulário</h2>
+    </section>
+    <form action="#">
+        <!--Button-->
+        <div>
+            <label for="btnOla">Exemplo de button</label>
+            <input type="button" value="Clique-me" id="btnOla" onclick="alert('Olá mundo');">
+        </div>
+        <!--Uso do Checkbox-->
+        <div>
+            <fieldset>
+                <legend>Estilo de vida</legend>
+                <div>
+                    <input type="checkbox" name="usotabaxo" id="usotabaco">
+                    <label for="usotabaco">Você fuma?</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="praticaesporte" id="praticaesporte">
+                    <label for="praticaesporte">Pratica esporte?</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="usoalcool" id="usoalcool">
+                    <label for="usoalcool">Você ingere álcool durante a semana?</label>
+            </div>
+            </fieldset>
+        </div>
+        <!--Nome da pessoa-->
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" maxlength="30" minlength="5" required>
+            <!--Campo requerido com no minimo 5 caracteres e no maximo 30-->
+            <!--Required obriga a informação de dados para nao enviar em branco-->
+            <!--Shift + alt + F alinha a identação da seção-->
+        </div>
+        <!--Endereço da pessoa-->
+        <div>
+            <label for="endereço">Endereço:</label>
+            <input type="text" name="endereço" id="endereço" required>
+        </div>
+        <!--Data de nascimento-->
+        <div>
+            <label for="dtnasc">Data de Nascimento:</label>
+            <input type="date" name="dtnasc" id="dtnasc" required>
+        </div>
+        <!--Senha do cartão de crédito-->
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" maxlength="10" minlength="6" required>
+        </div>
+        <!--Idade-->
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" maxlength="3" minlength="2" required>
+        </div>
+
+        <input type="submit" value="Enviar" id="btnEnviar">
+
+    </form>
+</body>
+
+</html>
