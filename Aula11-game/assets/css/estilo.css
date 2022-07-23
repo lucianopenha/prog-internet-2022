@@ -1,0 +1,47 @@
+.board{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+#pipe {
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    right: 0;
+    animation: pipe-anime 2s infinite linear;
+}
+#mario{
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    animation: mario-jump 1s infinite;
+
+}
+@keyframes pipe-anime {
+    from {
+        right: -80px;
+        
+    }
+    to{
+        right: 100%;
+    
+    }
+}
+@keyframes mario-jump {
+    0%
+    bottom: 0;
+}
+40% {
+
+bottom: 150px;
+
+}
+100% {
+    botton:0;
+}
+
+}

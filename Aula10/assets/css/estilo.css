@@ -1,0 +1,27 @@
+.linha{
+    display: flex;
+    flex-direction: row;
+
+}
+.coluna, .col-título{
+    width: 20%;
+    margin: 1px;
+    padding: 1px;
+    
+}
+.col-título {
+    text-align: center;
+    font-weight: bold;
+}
+    table, .tabela {
+        width: 50%;
+    }
+    .md-80 {
+        width: 80%;
+    }
+    .md-20 {
+
+    }
+    td, th, .coluna, .col-título{
+        border: 1px solid silver;
+    }
