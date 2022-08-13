@@ -1,0 +1,156 @@
+
+/* 
+ * Reset de propriedades 
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+ * Elementos html 
+ */
+
+body {
+  background-color: #F5F5F5;
+  display: grid;
+  grid-template: 
+  "lateral cabecalho" 60px
+  "lateral body" 1fr
+  "lateral rodape" 60px
+  /320px auto;
+ }
+
+/* 
+ * Primeiramente os IDs 
+ */
+
+#cabecalho {
+  grid-area: cabecalho;
+  background-color: white;
+  display: flex;
+  height: 60px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.65);
+}
+
+
+#pesquisar {
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #F5F5F5;
+  background-color: #F5F5F5;
+  padding: 10px;
+  width: 300px;
+}
+
+
+
+#barra-esquerda {
+  grid-area: lateral;
+  background-color: #4E73DF;
+  width: 320px;
+  height: 100vh;
+  padding: 20px;
+  color: white;
+  text-align: center;
+ }
+
+#rodape { 
+  grid-area: rodape;
+  background-color: white;
+  height: 60px;
+  box-shadow: 0px -4px 4px rgba(0,0,0,0.65);
+}
+
+#corpo {
+  grid-area: body;
+  padding: 20px;
+ }
+
+/* 
+ * Classes 
+ */
+.btn-pesquisar {
+  width: 40px;
+  height: 40px;
+  background-color: #4E73DF;
+  color: white;
+  border-radius: 0 5px 8px 0;
+  text-align: center;
+  padding-top: 12px;
+ }
+
+.div-pesquisar {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+ }
+
+.not-bell, .not-msg {
+  font-size: 20px;
+  color:#c2c2c2;
+  margin-right: 10px;
+  margin-top: 10px;
+ }
+
+.not-msg { }
+
+.perf-quadro { 
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  border-left: 2px solid #c2c2c2;
+}
+
+.perf-nome { 
+  margin-top: 12px;
+  margin-right: 10px;
+
+}
+
+.perf-foto { 
+  background-color: #c2c2c2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  padding-top:5px;
+}
+
+.logo-aside img {
+  width: 280px;
+}
+
+.home-aside { 
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.nav-aside { }
+
+.menu { 
+  list-style: none;
+}
+
+.menu-item { 
+  margin-top: 10px;
+}
+
+.menu-item a { 
+  text-decoration: none;
+  color:white;
+}
+
+.menu-item a:hover{
+  background-color: #c2c2c2;
+  color:black;
+}
+
+.div-direitos { 
+  text-align: center;
+  padding-top: 10px;
+}
