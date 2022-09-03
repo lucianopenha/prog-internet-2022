@@ -7,58 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora Científica</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
   <header>
-    <i class="bi bi-list"></i>
-    <h3> Calculadora Científica</h3>
-    <i class="bi bi-clock-history"></i>
+    <div>
+      <i class="bi bi-list"></i>
+    </div>
+    <h3>Científica</h3>
+    <div>
+      <i class="bi bi-clock-history"></i>
+    </div>
   </header>
   <section class="clDisplay">
     <div>
       <h4 id="display">0</h4>
     </div>
+  </section>
+  <section class="clOperacoes">
+    <div data-tipo="operacao" data-valor="sqrt" class="btn">&radic;</div> <!--sqrt significa raiz quadrada no javascript-->
+    <div data-tipo="parenteses" data-valor="(" class="btn">(</div>
+    <div data-tipo="parenteses" data-valor=")" class="btn">)</div>
+    <div data-tipo="operacao" data-valor="!" class="btn">n!</div>
+    <div data-tipo="operacao" data-valor="/" class="btn">&#247;</div>
 
+    <div data-tipo="operacao" data-valor="expo" class="btn"><span>x<sup>y</sup></span></div>
+    <div data-tipo="numero" data-valor="7" class="btn">7</div>
+    <div data-tipo="numero" data-valor="8" class="btn">8</div>
+    <div data-tipo="numero" data-valor="9" class="btn">9</div>
+    <div data-tipo="operacao" data-valor="*" class="btn">&times;</div>
 
+    <div data-tipo="operacao" data-valor="pi" class="btn">&#960;</div>
+    <div data-tipo="numero" data-valor="4" class="btn">4</div>
+    <div data-tipo="numero" data-valor="5" class="btn">5</div>
+    <div data-tipo="numero" data-valor="6" class="btn">6</div>
+    <div data-tipo="operacao" data-valor="-" class="btn">&#45;</div>
 
-    <section class="clOperacoes">
-      <section <div id="raiz"><i class='fa-solid fa-square-root-variable'></i></div>
-        <div id="abrep">(</div>
-        <div id="fechap">)</div>
-        <div id="fatorial">n!</div>
-        <div id="divisao">/</div>
-        <div id="elevado">/</div>
-        <div class="calculator__keys">
+    <div data-tipo="operacao" data-valor="quad" class="btn">x&sup2;</div>
+    <div data-tipo="numero" data-valor="1" class="btn">1</div>
+    <div data-tipo="numero" data-valor="2" class="btn">2</div>
+    <div data-tipo="numero" data-valor="3" class="btn">3</div>
+    <div data-tipo="operacao" data-valor="+" class="btn">&#43;</div>
 
-
-          <button class="key--operator" data-action="add">+</button>
-          <button class="key--operator" data-action="subtract">-</button>
-          <button class="key--operator" data-action="multiply">&times;</button>
-          <button class="key--operator" data-action="divide">÷</button>
-          <button class="key--operator" data-action="memoria">M+</button>
-          <div></div><button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>4</button>
-          <button>5</button>
-
-          <div><button>6</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>0</button>
-          </div>
-          <button data-action="decimal">.</button>
-          <button data-action="clear">AC</button>
-          <button class="key--equal" data-action="calculate">=</button>
-          <button data-action="clear"> TOTAL </button>
-        </div>
-      </section>
+    <div data-tipo="operacao" data-valor="clear" class="btn">C</div>
+    <div data-tipo="operacao" data-valor="inv" class="btn">+/-</div>
+    <div data-tipo="numero" data-valor="0" class="btn">0</div>
+    <div data-tipo="operacao" data-valor="." class="btn">,</div>
+    <div data-tipo="operacao" data-valor="eq" class="btn btneq">&#61;</div>
+  </section>
+  <button onclick="minhafuncao()">Clique-me "please"</button>
+  <script src="./js/exemplos.js"></script>
 </body>
 
 </html>
