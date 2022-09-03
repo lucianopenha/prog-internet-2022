@@ -1,0 +1,91 @@
+* { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+header {
+    text-align: left;
+    width: 5000px;    
+    gap : 5px;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 2px;
+    margin-bottom: 5px;
+    background-color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+    h2 {
+        margin-left: 10px;
+    
+}
+
+.clCampos {
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    align-items: center;
+}
+
+    .clCampos input:not([type=radio]){
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+    border: 1px solid silver;
+    
+
+}
+.cjInput {
+display: flex;
+}
+
+.btnInput {
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+
+}
+.cjInput input {
+    border-radius: 0 5px 5px 0 !important;
+}
+    .cl3Colunas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .clObrigatorio{
+        color: red;
+
+    }
+    .btn {
+        background-color: blue;
+        color: white;
+        padding: 8px;
+        border-radius: 15px;
+    }
+    .btn:hover{
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.801);
+    }
+    .clCampos input[type=submit]{
+        background-color: green;
+        color: wheat;
+        height: 30px;
+        
+    }
+    .clCampos input[type=reset]{
+        background-color: red;
+        color: white;
+        height: 30px;
+
+    }
+    .clCampos input[type=reset]:hover{
+        cursor: pointer;
+        background-color: rgba(255, 0, 0, 0.699);
+        
+    }
+    .msgErros.show{
+        color: brown;
+        background-color:white ;
+        height: 30px;
+
+    }
