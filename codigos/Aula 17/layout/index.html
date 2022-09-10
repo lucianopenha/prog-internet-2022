@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pessoas</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body>
+  <header>
+    <h3>Cadastro de Pessoas</h3>
+  </header>
+  <section id="cadastro">
+    <form class="row g-3">
+      <!-- linha 1 -->
+      <div class="col-md-12">
+        <label for="inputNome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="inputNome" name="nome">
+      </div>
+      <!-- linha 2 -->
+      <div class="col-md-4">
+        <label for="inputCPF" class="form-label">CPF</label>
+        <input type="text" class="form-control" id="inputCPF" name="cpf">
+      </div>
+      <div class="col-md-4">
+        <label for="inputNascimento" class="form-label">Data Nascimento</label>
+        <input type="date" class="form-control" id="inputNascimento" name="dtnascimento">
+      </div>
+      <div class="col-md-4">
+        <label for="inputSexo" class="form-label">CPF</label>
+        <div>
+          <input type="radio" class="form-check-input" id="inputSexoF" name="sexo" value="F">
+          <label for="inputSexoF">Feminino</label>
+          &nbsp;
+          <input type="radio" class="form-check-input" id="inputSexoM" name="sexo" value="M">
+          <label for="inputSexoF">Masculino</label>
+        </div>
+      </div>
+      <!-- linha 3 -->
+      <div class="col-md-4">
+        <label for="inputTelefone" class="form-label">Telefone</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon2"><i class="bi bi-telephone-fill"></i></span>
+          <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="inputCelular" class="form-label">Celular</label>
+        <input type="tel" class="form-control" id="inputCelular" name="celular">
+      </div>
+      <div class="col-md-4">
+       <!-- linha 4 --> 
+        &nbsp;
+      </div>
+      <!-- linha 4 -->
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" name="email">
+      </div>
+      <div class="col-md-6">
+        &nbsp;
+      </div>
+      <!-- linha 5 -->
+      <div class="col-md-6">
+        <label for="inputCep" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="inputCep" name="cep">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">&nbsp;</label>
+        <button type="button" class="btn btn-primary form-control">Pesquisar</button>
+      </div>
+      <div class="col-md-3">
+        &nbsp;
+      </div>
+      <!-- linha 6 -->
+      <div class="col-md-4">
+        <label for="inputRua" class="form-label">Endereço</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Rua</span>
+          <input type="text" class="form-control" placeholder="Rua" aria-label="Rua" aria-describedby="basic-addon1">
+        </div>      
+      </div>
+      <div class="col-md-4">
+        <label for="inputNumero" class="form-label">&nbsp;</label>
+        <input type="number" class="form-control" id="inputNumero" name="numero">
+      </div>
+      <div class="col-md-4">
+        <label for="inputBairro" class="form-label">&nbsp;</label>
+        <input type="text" class="form-control" id="inputBairro" name="bairro">
+      </div>
+      <!-- linha 7 -->
+
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Cancelar</button>
+      </div>
+    </form>
+  </section>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
